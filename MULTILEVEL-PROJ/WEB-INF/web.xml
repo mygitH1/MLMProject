@@ -1,0 +1,31 @@
+
+<web-app>
+<servlet>
+<servlet-name>regServlet</servlet-name>
+<servlet-class>com.impact.mlm.RegServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>loginServlet</servlet-name>
+	<servlet-class>com.impact.mlm.LoginServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>IncentiveServlet</servlet-name>
+	<servlet-class>com.impact.mlm.IncentiveServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>regServlet</servlet-name>
+<url-pattern>/regServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>loginServlet</servlet-name>
+<url-pattern>/loginServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>IncentiveServlet</servlet-name>
+<url-pattern>/IncentiveServlet</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+	<welcome-file>Homepage.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
